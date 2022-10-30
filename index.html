@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rolling Stones </title>
+    <!-- font awsome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> The Rolling Stones </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of VMB - Vipin Music Band</h1>
+             <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="0" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="1" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="2" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="3" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"> <span id="currentTimeIndicator">05:34</span><i id="4" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span><i id="5" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span><i id="6" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="7" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName"> Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="8" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="/covers/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songlistplay"> <span class="timePlay"><span id="currentTimeIndicator">05:34</span> <i id="9" class="far songIconPlay fa-play-circle"></i></span></span>
+                </div>
+             </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" min="0" max="100" value="0" id="myProgressBar">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x  fa-step-backward" id="previous"></i>
+            <i  class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fa fa-3x  fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" id= "gif" alt="" width="75px"><span id="masterSongName">Let Me Love You - Justin Beiber</span> 
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
