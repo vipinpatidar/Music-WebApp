@@ -1,163 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Quintessential&family=Yeon+Sung&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Quintessential&family=Yeon+Sung&display=swap");
+body {
   background-color: #f5f5f5;
   height: 100%;
-  background: linear-gradient(-45deg, #FFCDD2 50%, #B2EBF2 50%);
+  background: linear-gradient(-45deg, #ffcdd2 50%, #b2ebf2 50%);
   /* min-width: 100vw; */
   min-height: 100vh;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-    font-family: 'Piazzolla', serif;
+nav {
+  font-family: "Piazzolla", serif;
 }
-nav ul{
-    display: flex;
-    background-color: black;
-    color: white;
-    list-style: none;
-    height: 65px;
-    align-items: center;
+nav ul {
+  display: flex;
+  background-color: black;
+  color: white;
+  list-style: none;
+  height: 75px;
+  align-items: center;
 }
-ul li{
-    margin: 0 1.8rem;
-}
-
-.brand img{
-    width: 46px;
-    height: 46px;
-    margin-right: 7px;
-}
-.brand{
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
+ul li {
+  margin: 0 1.8rem;
 }
 
+.brand img {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
 
 /* middle container */
-.container{
-    min-height: 73vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    width: 75%;
-    margin: 23px auto;
-    /* border-radius: 12px; */
-    padding: 34px;
-    background-image: url('bg.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-family: 'Yeon Sung';
-    /* font-family: 'Quintessential', cursive; */
+.container {
+  min-height: 73vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 75%;
+  margin: 23px auto;
+  /* border-radius: 12px; */
+  padding: 34px;
+  background-image: url("bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Yeon Sung";
+  /* font-family: 'Quintessential', cursive; */
 }
-.songItemContainer{
-    margin-top: 3rem;
+.songItemContainer {
+  margin-top: 3rem;
 }
-.songItem{
-    height: 50px;
-    display: flex;
-    background-color: white;
-    /* width: 80%; */
-    color: black;
-    margin: 12px 0 ;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 34px;
-    /* flex-wrap: wrap; */
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  /* width: 80%; */
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  /* flex-wrap: wrap; */
 }
-.songItem img{
-   width:44px;
-   margin-left: 18px;
-   /* flex: 1; */
-   border-radius: 25px; 
-   animation: img 2s linear infinite  ;
-   
+.songItem img {
+  width: 44px;
+  margin-left: 18px;
+  /* flex: 1; */
+  border-radius: 25px;
+  animation: img 2s linear infinite;
 }
-@keyframes img{
-    0%{
-        transform: rotate(0deg);
-
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+@keyframes img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.timePlay{
-    padding-right:  32px;
+.timePlay {
+  padding-right: 32px;
+  cursor: pointer;
 }
-
-
 
 /* bottom */
-.bottom{
-    position: sticky;
-    height: 110px;
-    background-color: black;
-    color: white;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+.bottom {
+  position: sticky;
+  height: 110px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.icons{
-    margin-top: 14px;
+.icons {
+  margin-top: 14px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .icons i {
-    cursor: pointer;
-    margin: 0 7px;
+  cursor: pointer;
+  margin: 0 7px;
 }
 
-#myProgressBar{
-    width: 78vw;
-    cursor: pointer;
+#myProgressBar {
+  width: 78vw;
+  cursor: pointer;
 }
 
-.songInfo{
-    position: absolute;
-    left: 11vw;
-    font-family: 'Quintessential' ;
-    font-weight: 600;
+.songInfo {
+  position: absolute;
+  left: 11vw;
+  font-family: "Quintessential";
+  font-weight: 600;
 }
 
-.songInfo img{
-    opacity: 0;
-    transition: opacity 0.6s ease-in;
-    margin-right: 10px;
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+  margin-right: 10px;
+}
+
+/* Add these styles to your CSS */
+.volumeControl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 100%;
+  gap: 0.5rem;
+}
+
+.timeControl {
+  margin-top: 1rem;
+  span {
+    font-size: 1.2rem;
+  }
+}
+
+.volumeRangeDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ================================================================================== */
 /* media queries */
 
-@media(max-width:460px){
-    .songItem{
-        width: 110%;
+@media (max-width: 560px) {
+  .container {
+    padding: 34px 44px 34px 16px;
+    width: 80%;
+  }
+
+  .songItem {
+    width: 110%;
+  }
+  .songItem img {
+    width: 44px;
+    margin-left: 5px;
+    /* flex: 1; */
+    border-radius: 25px;
+  }
+  .bottom {
+    height: 180px;
+    padding: 16px;
+  }
+  .songInfo {
+    position: absolute;
+    left: 11vw;
+    top: 15px;
+  }
+
+  .songInfo img {
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+    margin: 0 10px;
+  }
+
+  .timeControl {
+    span {
+      font-size: 1rem;
     }
-    .songItem img{
-        width:44px;
-        margin-left: 5px;
-        /* flex: 1; */
-        border-radius: 25px; 
-     }
-     .bottom{
-        height: 140px;
-     }
-     .songInfo{
-        position: absolute;
-        left: 11vw;
-        top: 0;
-    }
-    
-    .songInfo img{
-        opacity: 0;
-        transition: opacity 0.6s ease-in;
-        margin: 0 10px;
-    }
+  }
+
+  .volumeControl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 10px;
+    gap: 0.5rem;
+  }
 }
